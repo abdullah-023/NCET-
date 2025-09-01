@@ -1,0 +1,12 @@
+<hibernate-configuration>
+    <session-factory name="Demo">
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">Abdullah</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/db1</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="show_sql">true</property>
+        <mapping class="Student"/>
+    </session-factory>
+</hibernate-configuration>
